@@ -1,0 +1,7 @@
+# .pairs - configuration for 'git pair'
+pairs:
+  # <initials>: <Firstname> <Lastname>[; <email-id>]
+  df: David Farber; dfarber
+email:
+  prefix: pair
+  domain: pivotallabs.com
