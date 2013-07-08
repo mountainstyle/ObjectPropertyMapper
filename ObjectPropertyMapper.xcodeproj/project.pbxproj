@@ -36,6 +36,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE1A7345178B59F900F899D5 /* ObjectPropertyMapper */ = {
+			isa = PBXGroup;
+			children = (
+				AECE3D45178B2DC0009E33F3 /* ObjectPropertyMapper-Info.plist */,
+			);
+			path = ObjectPropertyMapper;
+			sourceTree = "<group>";
+		};
+		AEC09511178B597900A442AA /* Target Support */ = {
+			isa = PBXGroup;
+			children = (
+				AE1A7345178B59F900F899D5 /* ObjectPropertyMapper */,
+			);
+			path = "Target Support";
+			sourceTree = "<group>";
+		};
 		AECE3D30178B2DC0009E33F3 = {
 			isa = PBXGroup;
 			children = (
@@ -43,7 +59,8 @@
 				AECE3D53178B31AC009E33F3 /* .pairs */,
 				AE63E7BD178B4C6F0030097B /* Readme.md */,
 				AE63E7BE178B56990030097B /* MIT.LICENSE */,
-				AECE3D43178B2DC0009E33F3 /* ObjectPropertyMapper */,
+				AECE3D43178B2DC0009E33F3 /* Sources */,
+				AEC09511178B597900A442AA /* Target Support */,
 				AECE3D3C178B2DC0009E33F3 /* Frameworks */,
 				AECE3D3B178B2DC0009E33F3 /* Products */,
 			);
@@ -66,22 +83,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AECE3D43178B2DC0009E33F3 /* ObjectPropertyMapper */ = {
+		AECE3D43178B2DC0009E33F3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				AECE3D4A178B2DC0009E33F3 /* ObjectPropertyMapper.h */,
 				AECE3D4B178B2DC0009E33F3 /* ObjectPropertyMapper.m */,
-				AECE3D44178B2DC0009E33F3 /* Supporting Files */,
 			);
-			path = ObjectPropertyMapper;
-			sourceTree = "<group>";
-		};
-		AECE3D44178B2DC0009E33F3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AECE3D45178B2DC0009E33F3 /* ObjectPropertyMapper-Info.plist */,
-			);
-			name = "Supporting Files";
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +238,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "ObjectPropertyMapper/ObjectPropertyMapper-Info.plist";
+				INFOPLIST_FILE = "Target Support/ObjectPropertyMapper/ObjectPropertyMapper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -243,7 +251,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "ObjectPropertyMapper/ObjectPropertyMapper-Info.plist";
+				INFOPLIST_FILE = "Target Support/ObjectPropertyMapper/ObjectPropertyMapper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
