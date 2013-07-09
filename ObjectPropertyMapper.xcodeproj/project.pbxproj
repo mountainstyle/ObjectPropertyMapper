@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE9EAAB1178C5B6400CCF7DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECE3D3D178B2DC0009E33F3 /* Cocoa.framework */; };
+		AE9EAAC1178C5B6400CCF7DA /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9EAAC0178C5B6400CCF7DA /* Cedar.framework */; };
+		AE9EAAD3178C620800CCF7DA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9EAAD2178C620800CCF7DA /* SenTestingKit.framework */; };
+		AE9EAAD4178C623D00CCF7DA /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9EAA9F178B6D4E00CCF7DA /* libExpecta.a */; };
+		AE9EAAD7178C671100CCF7DA /* ObjectPropertyMapperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9EAAD6178C671100CCF7DA /* ObjectPropertyMapperSpec.m */; };
 		AECE3D3E178B2DC0009E33F3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECE3D3D178B2DC0009E33F3 /* Cocoa.framework */; };
 		AECE3D4C178B2DC0009E33F3 /* ObjectPropertyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AECE3D4B178B2DC0009E33F3 /* ObjectPropertyMapper.m */; };
 /* End PBXBuildFile section */
@@ -103,6 +108,12 @@
 		AE63E7BE178B56990030097B /* MIT.LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = MIT.LICENSE; sourceTree = "<group>"; };
 		AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cedar.xcodeproj; path = Cedar/Cedar.xcodeproj; sourceTree = "<group>"; };
 		AE9EAA89178B6D4300CCF7DA /* Expecta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Expecta.xcodeproj; path = Expecta/Expecta.xcodeproj; sourceTree = "<group>"; };
+		AE9EAAAE178C5B6400CCF7DA /* ObjectPropertyMapperSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectPropertyMapperSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9EAAB8178C5B6400CCF7DA /* ObjectPropertyMapperSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjectPropertyMapperSpecs-Info.plist"; sourceTree = "<group>"; };
+		AE9EAABF178C5B6400CCF7DA /* ObjectPropertyMapperSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectPropertyMapperSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		AE9EAAC0178C5B6400CCF7DA /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = Frameworks/Cedar.framework; sourceTree = "<group>"; };
+		AE9EAAD2178C620800CCF7DA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		AE9EAAD6178C671100CCF7DA /* ObjectPropertyMapperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectPropertyMapperSpec.m; sourceTree = "<group>"; };
 		AECE3D3A178B2DC0009E33F3 /* ObjectPropertyMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectPropertyMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECE3D3D178B2DC0009E33F3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AECE3D42178B2DC0009E33F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +125,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE9EAAA9178C5B6400CCF7DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9EAAB1178C5B6400CCF7DA /* Cocoa.framework in Frameworks */,
+				AE9EAAC1178C5B6400CCF7DA /* Cedar.framework in Frameworks */,
+				AE9EAAD3178C620800CCF7DA /* SenTestingKit.framework in Frameworks */,
+				AE9EAAD4178C623D00CCF7DA /* libExpecta.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AECE3D36178B2DC0009E33F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,10 +190,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AE9EAAD5178C659800CCF7DA /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				AE9EAAD6178C671100CCF7DA /* ObjectPropertyMapperSpec.m */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		AE9EAAD8178C6AF700CCF7DA /* ObjectPropertyMapperSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				AE9EAAB8178C5B6400CCF7DA /* ObjectPropertyMapperSpecs-Info.plist */,
+				AE9EAABF178C5B6400CCF7DA /* ObjectPropertyMapperSpecs-Prefix.pch */,
+				AE9EAAC0178C5B6400CCF7DA /* Cedar.framework */,
+			);
+			path = ObjectPropertyMapperSpecs;
+			sourceTree = "<group>";
+		};
 		AEC09511178B597900A442AA /* Target Support */ = {
 			isa = PBXGroup;
 			children = (
 				AE1A7345178B59F900F899D5 /* ObjectPropertyMapper */,
+				AE9EAAD8178C6AF700CCF7DA /* ObjectPropertyMapperSpecs */,
 			);
 			path = "Target Support";
 			sourceTree = "<group>";
@@ -184,6 +225,7 @@
 				AE63E7BD178B4C6F0030097B /* Readme.md */,
 				AE63E7BE178B56990030097B /* MIT.LICENSE */,
 				AECE3D43178B2DC0009E33F3 /* Sources */,
+				AE9EAAD5178C659800CCF7DA /* Specs */,
 				AE1A7347178B660400F899D5 /* Externals */,
 				AEC09511178B597900A442AA /* Target Support */,
 				AECE3D3C178B2DC0009E33F3 /* Frameworks */,
@@ -195,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				AECE3D3A178B2DC0009E33F3 /* ObjectPropertyMapper.framework */,
+				AE9EAAAE178C5B6400CCF7DA /* ObjectPropertyMapperSpecs.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,6 +247,7 @@
 			children = (
 				AECE3D42178B2DC0009E33F3 /* Foundation.framework */,
 				AECE3D3D178B2DC0009E33F3 /* Cocoa.framework */,
+				AE9EAAD2178C620800CCF7DA /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -230,6 +274,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		AE9EAAAD178C5B6400CCF7DA /* ObjectPropertyMapperSpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9EAAD1178C5B6400CCF7DA /* Build configuration list for PBXNativeTarget "ObjectPropertyMapperSpecs" */;
+			buildPhases = (
+				AE9EAAA8178C5B6400CCF7DA /* Sources */,
+				AE9EAAA9178C5B6400CCF7DA /* Frameworks */,
+				AE9EAAAA178C5B6400CCF7DA /* Resources */,
+				AE9EAAAC178C5B6400CCF7DA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectPropertyMapperSpecs;
+			productName = ObjectPropertyMapperSpecs;
+			productReference = AE9EAAAE178C5B6400CCF7DA /* ObjectPropertyMapperSpecs.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		AECE3D39178B2DC0009E33F3 /* ObjectPropertyMapper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AECE3D4F178B2DC0009E33F3 /* Build configuration list for PBXNativeTarget "ObjectPropertyMapper" */;
@@ -281,6 +343,7 @@
 			projectRoot = "";
 			targets = (
 				AECE3D39178B2DC0009E33F3 /* ObjectPropertyMapper */,
+				AE9EAAAD178C5B6400CCF7DA /* ObjectPropertyMapperSpecs */,
 			);
 		};
 /* End PBXProject section */
@@ -373,6 +436,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AE9EAAAA178C5B6400CCF7DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AECE3D38178B2DC0009E33F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,7 +452,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AE9EAAAC178C5B6400CCF7DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		AE9EAAA8178C5B6400CCF7DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9EAAD7178C671100CCF7DA /* ObjectPropertyMapperSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AECE3D35178B2DC0009E33F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +488,50 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		AE9EAAC2178C5B6400CCF7DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ObjectPropertyMapper.framework/ObjectPropertyMapper";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/Target Support/ObjectPropertyMapperSpecs/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support/ObjectPropertyMapperSpecs/ObjectPropertyMapperSpecs-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(CONFIGURATION_BUILD_DIR)\"";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AE9EAAC3178C5B6400CCF7DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ObjectPropertyMapper.framework/ObjectPropertyMapper";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/Target Support/ObjectPropertyMapperSpecs/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support/ObjectPropertyMapperSpecs/ObjectPropertyMapperSpecs-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(CONFIGURATION_BUILD_DIR)\"";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		AECE3D4D178B2DC0009E33F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -482,6 +620,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE9EAAD1178C5B6400CCF7DA /* Build configuration list for PBXNativeTarget "ObjectPropertyMapperSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9EAAC2178C5B6400CCF7DA /* Debug */,
+				AE9EAAC3178C5B6400CCF7DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AECE3D34178B2DC0009E33F3 /* Build configuration list for PBXProject "ObjectPropertyMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

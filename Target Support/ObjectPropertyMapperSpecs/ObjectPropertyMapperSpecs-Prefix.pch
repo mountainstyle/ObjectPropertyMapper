@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'ObjectPropertyMapperSpecs' target in the 'ObjectPropertyMapperSpecs' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <Cedar/SpecHelper.h>
+#endif

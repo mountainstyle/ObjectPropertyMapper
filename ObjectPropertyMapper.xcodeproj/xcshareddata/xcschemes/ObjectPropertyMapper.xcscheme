@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AE9EAAAD178C5B6400CCF7DA"
+               BuildableName = "ObjectPropertyMapperSpecs.octest"
+               BlueprintName = "ObjectPropertyMapperSpecs"
+               ReferencedContainer = "container:ObjectPropertyMapper.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
