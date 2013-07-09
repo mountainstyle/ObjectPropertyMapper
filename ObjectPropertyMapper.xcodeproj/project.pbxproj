@@ -11,9 +11,98 @@
 		AECE3D4C178B2DC0009E33F3 /* ObjectPropertyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AECE3D4B178B2DC0009E33F3 /* ObjectPropertyMapper.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AE9EAA79178B6D3D00CCF7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEEE1FB611DC271300029872;
+			remoteInfo = Cedar;
+		};
+		AE9EAA7B178B6D3D00CCF7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEEE218611DC28E200029872;
+			remoteInfo = Specs;
+		};
+		AE9EAA7D178B6D3D00CCF7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96A07F0813F276640021974D;
+			remoteInfo = FocusedSpecs;
+		};
+		AE9EAA7F178B6D3D00CCF7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEEE222911DC2B0600029872;
+			remoteInfo = "Cedar-StaticLib";
+		};
+		AE9EAA81178B6D3D00CCF7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEEE227611DC2CF900029872;
+			remoteInfo = iOSSpecs;
+		};
+		AE9EAA83178B6D3D00CCF7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96B5F9F6144A81A7000A6A5D;
+			remoteInfo = OCUnitApp;
+		};
+		AE9EAA85178B6D3D00CCF7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96B5FA11144A81A8000A6A5D;
+			remoteInfo = OCUnitAppTests;
+		};
+		AE9EAA87178B6D3D00CCF7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96158A86144A915E005895CE;
+			remoteInfo = OCUnitAppLogicTests;
+		};
+		AE9EAA9E178B6D4E00CCF7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA89178B6D4300CCF7DA /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9ACDF0C13B2DD520010F4D7;
+			remoteInfo = Expecta;
+		};
+		AE9EAAA0178B6D4E00CCF7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA89178B6D4300CCF7DA /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93067CE13B2E6D100EA26FF;
+			remoteInfo = "Expecta-iOS";
+		};
+		AE9EAAA2178B6D4E00CCF7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA89178B6D4300CCF7DA /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9ACDF1D13B2DD520010F4D7;
+			remoteInfo = ExpectaTests;
+		};
+		AE9EAAA4178B6D4E00CCF7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA89178B6D4300CCF7DA /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93067DA13B2E6D100EA26FF;
+			remoteInfo = "Expecta-iOSTests";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AE63E7BD178B4C6F0030097B /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
 		AE63E7BE178B56990030097B /* MIT.LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = MIT.LICENSE; sourceTree = "<group>"; };
+		AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Cedar.xcodeproj; path = Cedar/Cedar.xcodeproj; sourceTree = "<group>"; };
+		AE9EAA89178B6D4300CCF7DA /* Expecta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Expecta.xcodeproj; path = Expecta/Expecta.xcodeproj; sourceTree = "<group>"; };
 		AECE3D3A178B2DC0009E33F3 /* ObjectPropertyMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectPropertyMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECE3D3D178B2DC0009E33F3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AECE3D42178B2DC0009E33F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +133,41 @@
 			path = ObjectPropertyMapper;
 			sourceTree = "<group>";
 		};
+		AE1A7347178B660400F899D5 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */,
+				AE9EAA89178B6D4300CCF7DA /* Expecta.xcodeproj */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		AE9EAA6E178B6D3D00CCF7DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE9EAA7A178B6D3D00CCF7DA /* Cedar.framework */,
+				AE9EAA7C178B6D3D00CCF7DA /* Specs */,
+				AE9EAA7E178B6D3D00CCF7DA /* FocusedSpecs */,
+				AE9EAA80178B6D3D00CCF7DA /* libCedar-StaticLib.a */,
+				AE9EAA82178B6D3D00CCF7DA /* iOSSpecs.app */,
+				AE9EAA84178B6D3D00CCF7DA /* OCUnitApp.app */,
+				AE9EAA86178B6D3D00CCF7DA /* OCUnitAppTests.octest */,
+				AE9EAA88178B6D3D00CCF7DA /* OCUnitAppLogicTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE9EAA98178B6D4E00CCF7DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE9EAA9F178B6D4E00CCF7DA /* libExpecta.a */,
+				AE9EAAA1178B6D4E00CCF7DA /* libExpecta-iOS.a */,
+				AE9EAAA3178B6D4E00CCF7DA /* ExpectaTests.octest */,
+				AE9EAAA5178B6D4E00CCF7DA /* Expecta-iOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AEC09511178B597900A442AA /* Target Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +184,7 @@
 				AE63E7BD178B4C6F0030097B /* Readme.md */,
 				AE63E7BE178B56990030097B /* MIT.LICENSE */,
 				AECE3D43178B2DC0009E33F3 /* Sources */,
+				AE1A7347178B660400F899D5 /* Externals */,
 				AEC09511178B597900A442AA /* Target Support */,
 				AECE3D3C178B2DC0009E33F3 /* Frameworks */,
 				AECE3D3B178B2DC0009E33F3 /* Products */,
@@ -143,12 +268,109 @@
 			mainGroup = AECE3D30178B2DC0009E33F3;
 			productRefGroup = AECE3D3B178B2DC0009E33F3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AE9EAA6E178B6D3D00CCF7DA /* Products */;
+					ProjectRef = AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */;
+				},
+				{
+					ProductGroup = AE9EAA98178B6D4E00CCF7DA /* Products */;
+					ProjectRef = AE9EAA89178B6D4300CCF7DA /* Expecta.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AECE3D39178B2DC0009E33F3 /* ObjectPropertyMapper */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AE9EAA7A178B6D3D00CCF7DA /* Cedar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cedar.framework;
+			remoteRef = AE9EAA79178B6D3D00CCF7DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE9EAA7C178B6D3D00CCF7DA /* Specs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Specs;
+			remoteRef = AE9EAA7B178B6D3D00CCF7DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE9EAA7E178B6D3D00CCF7DA /* FocusedSpecs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = FocusedSpecs;
+			remoteRef = AE9EAA7D178B6D3D00CCF7DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE9EAA80178B6D3D00CCF7DA /* libCedar-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCedar-StaticLib.a";
+			remoteRef = AE9EAA7F178B6D3D00CCF7DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE9EAA82178B6D3D00CCF7DA /* iOSSpecs.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = iOSSpecs.app;
+			remoteRef = AE9EAA81178B6D3D00CCF7DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE9EAA84178B6D3D00CCF7DA /* OCUnitApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OCUnitApp.app;
+			remoteRef = AE9EAA83178B6D3D00CCF7DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE9EAA86178B6D3D00CCF7DA /* OCUnitAppTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCUnitAppTests.octest;
+			remoteRef = AE9EAA85178B6D3D00CCF7DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE9EAA88178B6D3D00CCF7DA /* OCUnitAppLogicTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCUnitAppLogicTests.octest;
+			remoteRef = AE9EAA87178B6D3D00CCF7DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE9EAA9F178B6D4E00CCF7DA /* libExpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libExpecta.a;
+			remoteRef = AE9EAA9E178B6D4E00CCF7DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE9EAAA1178B6D4E00CCF7DA /* libExpecta-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libExpecta-iOS.a";
+			remoteRef = AE9EAAA0178B6D4E00CCF7DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE9EAAA3178B6D4E00CCF7DA /* ExpectaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExpectaTests.octest;
+			remoteRef = AE9EAAA2178B6D4E00CCF7DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE9EAAA5178B6D4E00CCF7DA /* Expecta-iOSTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Expecta-iOSTests.octest";
+			remoteRef = AE9EAAA4178B6D4E00CCF7DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AECE3D38178B2DC0009E33F3 /* Resources */ = {

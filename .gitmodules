@@ -1,0 +1,6 @@
+[submodule "Externals/Cedar"]
+	path = Externals/Cedar
+	url = git@github.com:pivotal/cedar.git
+[submodule "Externals/Expecta"]
+	path = Externals/Expecta
+	url = git@github.com:mountainstyle/expecta.git
