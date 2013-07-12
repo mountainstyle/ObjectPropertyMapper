@@ -11,4 +11,6 @@
 
 @interface ObjectPropertyMapper : NSObject
 
+- (void)applyProperties:(NSDictionary *)properties toObject:(id)object;
+
 @end
