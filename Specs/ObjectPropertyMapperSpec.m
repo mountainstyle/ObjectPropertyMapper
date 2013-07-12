@@ -64,6 +64,7 @@ describe(@"ObjectPropertyMapper", ^{
         @"arrayProperty": arrayObject,
         @"boolProperty": @YES,
         @"integerProperty": @42,
+//        @"urlProperty": @"http://www.example.com/path",
     };
 
     beforeEach(^{
@@ -114,6 +115,8 @@ describe(@"ObjectPropertyMapper", ^{
             @"valueProperty": [NSNull null],
             @"dictionaryProperty": [NSNull null],
             @"arrayProperty": [NSNull null],
+//            @"boolProperty": [NSNull null],
+//            @"integerProperty": [NSNull null],
         };
 
         [mapper applyProperties:nullProperties toObject:simpleObject];
@@ -123,6 +126,8 @@ describe(@"ObjectPropertyMapper", ^{
         expect(simpleObject.valueProperty).to.beNil();
         expect(simpleObject.dictionaryProperty).to.beNil();
         expect(simpleObject.arrayProperty).to.beNil();
+//        expect(simpleObject.boolProperty).to.equal(NO);
+//        expect(simpleObject.integerProperty).to.equal(0);
     });
 
     it(@"should instantiate and map values to non-simple properties", ^{
