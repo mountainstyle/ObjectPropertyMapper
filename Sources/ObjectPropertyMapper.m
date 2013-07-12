@@ -13,10 +13,12 @@
 
 @property (strong, nonatomic, readwrite) Class objectClass;
 @property (strong, nonatomic, readwrite) NSString *propertyName;
+@property (strong, nonatomic, readonly) Class propertyClass;
 
 + (id)newWithClass:(Class)objectClass name:(NSString *)propertyName;
 - (id)initWithClass:(Class)objectClass name:(NSString *)propertyName;
 - (BOOL)acceptsNull:(id)nullObject;
+- (BOOL)acceptsMap:(NSDictionary *)propertyMap;
 - (BOOL)acceptsObject:(id)propertyObject;
 - (BOOL)acceptsValue:(id)propertyValue;
 
@@ -26,6 +28,7 @@
 @interface ObjectPropertyMapper ()
 
 - (BOOL)property:(PropertyDetails *)property onObject:(id)object acceptsNull:(id)nullObject;
+- (BOOL)property:(PropertyDetails *)property onObject:(id)object acceptsMap:(NSDictionary *)propertyMap;
 - (BOOL)property:(PropertyDetails *)property onObject:(id)object acceptsObject:(id)propertyObject;
 - (BOOL)property:(PropertyDetails *)property onObject:(id)object acceptsValue:(id)propertyValue;
 
@@ -43,6 +46,11 @@
         else if ([self property:propertyDetails onObject:object acceptsObject:propertyValue]) {
             [object setValue:propertyValue forKey:propertyName];
         }
+        else if ([self property:propertyDetails onObject:object acceptsMap:propertyValue]) {
+            id propertyInstance = [propertyDetails.propertyClass new];
+            [object setValue:propertyInstance forKey:propertyName];
+            [self applyProperties:(NSDictionary *)propertyValue toObject:propertyInstance];
+        }
         else if ([self property:propertyDetails onObject:object acceptsValue:propertyValue]) {
             [object setValue:propertyValue forKey:propertyName];
         }
@@ -56,6 +64,10 @@
 
 - (BOOL)property:(PropertyDetails *)property onObject:(id)object acceptsNull:(id)nullObject {
     return [property acceptsNull:nullObject];
+}
+
+- (BOOL)property:(PropertyDetails *)property onObject:(id)object acceptsMap:(NSDictionary *)propertyMap {
+    return [property acceptsMap:propertyMap];
 }
 
 - (BOOL)property:(PropertyDetails *)property onObject:(id)object acceptsObject:(id)propertyObject {
@@ -105,6 +117,12 @@
     return
         !!self.propertyClass
         || [self.propertyType isEqualToString:@"id"];
+}
+
+- (BOOL)acceptsMap:(NSDictionary *)propertyMap {
+    if (![propertyMap isKindOfClass:[NSDictionary class]]) return NO;
+
+    return !!self.propertyClass;
 }
 
 - (BOOL)acceptsObject:(id)propertyObject {

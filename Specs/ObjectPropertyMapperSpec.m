@@ -34,6 +34,18 @@
 @end
 
 
+@interface ObjectWithComplexProperties : NSObject
+
+@property (strong, nonatomic, readwrite) ObjectWithSimpleProperties *simpleObject;
+
+@end
+
+
+@implementation ObjectWithComplexProperties
+
+@end
+
+
 SPEC_BEGIN(ObjectPropertyMapperSpec)
 
 describe(@"ObjectPropertyMapper", ^{
@@ -111,6 +123,20 @@ describe(@"ObjectPropertyMapper", ^{
         expect(simpleObject.valueProperty).to.beNil();
         expect(simpleObject.dictionaryProperty).to.beNil();
         expect(simpleObject.arrayProperty).to.beNil();
+    });
+
+    it(@"should instantiate and map values to non-simple properties", ^{
+        ObjectWithComplexProperties *complexObject = [ObjectWithComplexProperties new];
+
+        NSDictionary *properties = @{
+            @"simpleObject": @{
+                @"stringProperty": stringObject,
+            },
+        };
+        [mapper applyProperties:properties toObject:complexObject];
+
+        expect(complexObject.simpleObject).to.beKindOf([ObjectWithSimpleProperties class]);
+        expect(complexObject.simpleObject.stringProperty).to.beIdenticalTo(stringObject);
     });
 });
 
