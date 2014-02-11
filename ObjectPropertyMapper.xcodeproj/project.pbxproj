@@ -114,7 +114,7 @@
 		AE9EAAC0178C5B6400CCF7DA /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = Frameworks/Cedar.framework; sourceTree = "<group>"; };
 		AE9EAAD2178C620800CCF7DA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		AE9EAAD6178C671100CCF7DA /* ObjectPropertyMapperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectPropertyMapperSpec.m; sourceTree = "<group>"; };
-		AEA1A77117B195C400AF82F3 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		AEA1A77117B195C400AF82F3 /* Rakefile.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = Rakefile.rb; sourceTree = "<group>"; };
 		AECE3D3A178B2DC0009E33F3 /* ObjectPropertyMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectPropertyMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECE3D3D178B2DC0009E33F3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AECE3D42178B2DC0009E33F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -224,7 +224,7 @@
 				AECE3D52178B3175009E33F3 /* .gitignore */,
 				AECE3D53178B31AC009E33F3 /* .pairs */,
 				AE63E7BE178B56990030097B /* MIT.LICENSE */,
-				AEA1A77117B195C400AF82F3 /* Rakefile */,
+				AEA1A77117B195C400AF82F3 /* Rakefile.rb */,
 				AE63E7BD178B4C6F0030097B /* Readme.md */,
 				AECE3D43178B2DC0009E33F3 /* Sources */,
 				AE9EAAD5178C659800CCF7DA /* Specs */,
