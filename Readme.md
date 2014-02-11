@@ -19,4 +19,4 @@ This project uses only standard Cocoa classes and has no external dependencies.
 Simply copy ObjectPropertyMapper.h and ObjectPropertyMapper.c to your project.
 
 
-Copyright (c) 2013 Pivotal Labs. This software is licensed under the MIT License.
+Copyright (c) 2013-2014 Pivotal Labs.  This software is licensed under the MIT License.

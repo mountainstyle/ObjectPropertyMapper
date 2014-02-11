@@ -1,4 +1,4 @@
-//  Copyright (c) 2013 Pivotal Labs. This software is licensed under the MIT License.
+//  Copyright (c) 2013-2014 Pivotal Labs.  This software is licensed under the MIT License.
 
 #define EXP_SHORTHAND
 #import "Expecta.h"
