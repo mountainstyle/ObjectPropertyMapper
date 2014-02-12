@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE76DAB418AAC7F800C59E58 /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9EAA7A178B6D3D00CCF7DA /* Cedar.framework */; };
 		AE9EAAB1178C5B6400CCF7DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECE3D3D178B2DC0009E33F3 /* Cocoa.framework */; };
-		AE9EAAC1178C5B6400CCF7DA /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9EAAC0178C5B6400CCF7DA /* Cedar.framework */; };
 		AE9EAAD3178C620800CCF7DA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9EAAD2178C620800CCF7DA /* SenTestingKit.framework */; };
 		AE9EAAD4178C623D00CCF7DA /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9EAA9F178B6D4E00CCF7DA /* libExpecta.a */; };
 		AE9EAAD7178C671100CCF7DA /* ObjectPropertyMapperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9EAAD6178C671100CCF7DA /* ObjectPropertyMapperSpec.m */; };
@@ -23,6 +23,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 9C4416F917FF3F4A00978F09;
 			remoteInfo = "ExpectaTests-XCTest";
+		};
+		AE76DAAB18AAC7CF00C59E58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE02E7E4184EABCD00414F19;
+			remoteInfo = iOSFrameworkSpecs;
+		};
+		AE76DAAD18AAC7CF00C59E58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9EAA6D178B6D3D00CCF7DA /* Cedar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F45A3DD180E4796003C1E36;
+			remoteInfo = XCUnitAppTests;
 		};
 		AE9EAA79178B6D3D00CCF7DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -118,7 +132,6 @@
 		AE9EAAAE178C5B6400CCF7DA /* ObjectPropertyMapperSpecs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectPropertyMapperSpecs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9EAAB8178C5B6400CCF7DA /* ObjectPropertyMapperSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjectPropertyMapperSpecs-Info.plist"; sourceTree = "<group>"; };
 		AE9EAABF178C5B6400CCF7DA /* ObjectPropertyMapperSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectPropertyMapperSpecs-Prefix.pch"; sourceTree = "<group>"; };
-		AE9EAAC0178C5B6400CCF7DA /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = Frameworks/Cedar.framework; sourceTree = "<group>"; };
 		AE9EAAD2178C620800CCF7DA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		AE9EAAD6178C671100CCF7DA /* ObjectPropertyMapperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectPropertyMapperSpec.m; sourceTree = "<group>"; };
 		AEA1A77117B195C400AF82F3 /* Rakefile.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = Rakefile.rb; sourceTree = "<group>"; };
@@ -137,8 +150,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE76DAB418AAC7F800C59E58 /* Cedar.framework in Frameworks */,
 				AE9EAAB1178C5B6400CCF7DA /* Cocoa.framework in Frameworks */,
-				AE9EAAC1178C5B6400CCF7DA /* Cedar.framework in Frameworks */,
 				AE9EAAD3178C620800CCF7DA /* SenTestingKit.framework in Frameworks */,
 				AE9EAAD4178C623D00CCF7DA /* libExpecta.a in Frameworks */,
 			);
@@ -180,8 +193,10 @@
 				AE9EAA7E178B6D3D00CCF7DA /* FocusedSpecs */,
 				AE9EAA80178B6D3D00CCF7DA /* libCedar-StaticLib.a */,
 				AE9EAA82178B6D3D00CCF7DA /* iOSSpecs.app */,
+				AE76DAAC18AAC7CF00C59E58 /* iOSFrameworkSpecs.app */,
 				AE9EAA84178B6D3D00CCF7DA /* OCUnitApp.app */,
 				AE9EAA86178B6D3D00CCF7DA /* OCUnitAppTests.octest */,
+				AE76DAAE18AAC7CF00C59E58 /* XCUnitAppTests.xctest */,
 				AE9EAA88178B6D3D00CCF7DA /* OCUnitAppLogicTests.octest */,
 			);
 			name = Products;
@@ -212,7 +227,6 @@
 			children = (
 				AE9EAAB8178C5B6400CCF7DA /* ObjectPropertyMapperSpecs-Info.plist */,
 				AE9EAABF178C5B6400CCF7DA /* ObjectPropertyMapperSpecs-Prefix.pch */,
-				AE9EAAC0178C5B6400CCF7DA /* Cedar.framework */,
 			);
 			path = ObjectPropertyMapperSpecs;
 			sourceTree = "<group>";
@@ -366,6 +380,20 @@
 			remoteRef = AE76DA9418AA93D900C59E58 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		AE76DAAC18AAC7CF00C59E58 /* iOSFrameworkSpecs.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = iOSFrameworkSpecs.app;
+			remoteRef = AE76DAAB18AAC7CF00C59E58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE76DAAE18AAC7CF00C59E58 /* XCUnitAppTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XCUnitAppTests.xctest;
+			remoteRef = AE76DAAD18AAC7CF00C59E58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		AE9EAA7A178B6D3D00CCF7DA /* Cedar.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -512,7 +540,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"\"$(SRCROOT)/Target Support/ObjectPropertyMapperSpecs/Frameworks\"",
+					"$(BUILT_PRODUCTS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Target Support/ObjectPropertyMapperSpecs/ObjectPropertyMapperSpecs-Prefix.pch";
@@ -535,7 +563,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"\"$(SRCROOT)/Target Support/ObjectPropertyMapperSpecs/Frameworks\"",
+					"$(BUILT_PRODUCTS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Target Support/ObjectPropertyMapperSpecs/ObjectPropertyMapperSpecs-Prefix.pch";
